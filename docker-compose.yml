@@ -1,0 +1,10 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    stdin_open: true    # Keep STDIN open
+    tty: true          # Allocate a pseudo-TTY
+    user: "1000:1000" 
+    volumes:
+      - ./home/powder:/home/powder/
