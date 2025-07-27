@@ -27,6 +27,7 @@ int get_positive_int(void) {
 
 void print_a_square(int rows, int columns) {
     
+    
     for (int i = 0; i < rows; i++) {
 
         for (int j = 0; j < columns; j++) {
