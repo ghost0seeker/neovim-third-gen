@@ -22,10 +22,15 @@ return {
                 'ts_ls',
                 'gopls',
                 'clangd',
+<<<<<<< HEAD
+=======
+                'pyright',
+>>>>>>> cs50x-lecture-c
             },
         },
         
         dependencies = {
+<<<<<<< HEAD
         { "mason-org/mason.nvim", opts = {
             ui = {
                 icons = {
@@ -36,6 +41,18 @@ return {
             },
         } },
             "neovim/nvim-lspconfig",
+=======
+            { "mason-org/mason.nvim", opts = {
+                ui = {
+                    icons = {
+                        package_installed = "✓",
+                        package_pending = "➜",
+                        package_uninstalled = "✗"
+                    }
+                },
+            } },
+                "neovim/nvim-lspconfig",
+>>>>>>> cs50x-lecture-c
         },
 
         config = function(_, opts)
