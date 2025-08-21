@@ -27,13 +27,10 @@ require("lazy").setup({
     -- import your plugins
     { import = "plugins.colorscheme" },
     { import = "plugins.language" },
-<<<<<<< HEAD
-=======
     { import = "plugins.diagnostics" },
     { import = "plugins.utilities" },
     { import = "plugins.completions" },
     { import = "plugins.user_interface" },
->>>>>>> cs50x-lecture-c
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
