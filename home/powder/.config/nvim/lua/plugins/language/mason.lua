@@ -22,20 +22,21 @@ return {
                 'ts_ls',
                 'gopls',
                 'clangd',
+                'pyright',
             },
         },
         
         dependencies = {
-        { "mason-org/mason.nvim", opts = {
-            ui = {
-                icons = {
-                    package_installed = "✓",
-                    package_pending = "➜",
-                    package_uninstalled = "✗"
-                }
-            },
-        } },
-            "neovim/nvim-lspconfig",
+            { "mason-org/mason.nvim", opts = {
+                ui = {
+                    icons = {
+                        package_installed = "✓",
+                        package_pending = "➜",
+                        package_uninstalled = "✗"
+                    }
+                },
+            } },
+                "neovim/nvim-lspconfig",
         },
 
         config = function(_, opts)
