@@ -1,8 +1,37 @@
 require("config.lazy")
 
-require("lazy").setup({
-  {"nvim-treesitter/nvim-treesitter", branch = 'master', lazy = false, build = ":TSUpdate"}
-})
+vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
+
+-- Enable auto and smart indentation
+vim.opt.autoindent = true
+vim.opt.smartindent = true
+
+-- Enable line numbers
+vim.opt.number = true       -- Show absolute line numbers
+
+-- Quick file search
+vim.keymap.set('n', '<leader>ff', '<cmd>Telescope find_files<cr>')
+-- Search through file content
+vim.keymap.set('n', '<leader>fg', '<cmd>Telescope live_grep<cr>')
+-- Browse open buffers
+vim.keymap.set('n', '<leader>fb', '<cmd>Telescope buffers<cr>')
+-- Search for string under cursor
+vim.keymap.set('n', '<leader>fs', '<cmd>Telescope grep_string<cr>')
+
+-- Toggle floating terminal
+vim.keymap.set('n', '<C-\\>', '<cmd>ToggleTerm direction=float<cr>')
+vim.keymap.set('t', '<C-\\>', '<cmd>ToggleTerm<cr>')
+
+-- Open terminal in a horizontal split at the bottom (VSCode style)
+vim.keymap.set('n', '<C-`>', '<cmd>ToggleTerm direction=horizontal<cr>')
+vim.keymap.set('t', '<C-`>', '<cmd>ToggleTerm<cr>')
+
+-- Aerial-Code outline
+vim.keymap.set('n', '<leader>a', '<cmd>AerialToggle!<CR>')
+
+-- require("config.lazy").setup({
+--   {"nvim-treesitter/nvim-treesitter", branch = 'master', lazy = false, build = ":TSUpdate"}
+-- })
 
 -- vim.diagnostic.config(
 --     {
