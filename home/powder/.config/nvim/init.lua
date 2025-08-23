@@ -5,10 +5,11 @@ vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>', { noremap = true, silent
 -- Enable auto and smart indentation
 vim.opt.autoindent = true
 vim.opt.smartindent = true
+vim.opt.tabstop = 2
 
 -- Enable line numbers
 vim.opt.number = true       -- Show absolute line numbers
-
+	
 -- Quick file search
 vim.keymap.set('n', '<leader>ff', '<cmd>Telescope find_files<cr>')
 -- Search through file content
