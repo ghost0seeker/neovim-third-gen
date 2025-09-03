@@ -22,17 +22,22 @@ return {
       right_mouse_command = function(n) Snacks.bufdelete(n) end,
       diagnostics = "nvim_lsp",
       always_show_bufferline = false,
-      separator_style = "slope",
+      separator_style = "padded_slant",
       indicator = {
         icon = '▎', -- The indicator icon
        style = 'icon', -- Options: 'icon', 'underline', 'none'
       },
-      offsets = {
+				offsets = {
         {
-          filetype = "neo-tree",
-          text = "Neo-tree",
-          highlight = "Directory",
-          text_align = "left",
+								filetype = "neo-tree",
+								text = "Neo-tree",
+								highlight = "Directory",
+								text_align = "left",
+				},
+				hover = {
+            enabled = true,
+            delay = 200,
+            reveal = {'close'}
         },
       },
     },
